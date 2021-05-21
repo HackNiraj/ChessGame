@@ -1,0 +1,14 @@
+com.chess.engine.Board.Move$PawnPromotion
+com.chess.engine.Board.Move
+com.chess.engine.Board.Move$QueenSideCastleMove
+com.chess.engine.Board.Move$MajorAttackMove
+com.chess.engine.Board.Move$AttackMove
+com.chess.engine.Board.Move$PawnAttackMove
+com.chess.engine.Board.Move$KingSideCastleMove
+com.chess.engine.Board.Move$MoveFactory
+com.chess.engine.Board.Move$NullMove
+com.chess.engine.Board.Move$MajorMove
+com.chess.engine.Board.Move$PawnJump
+com.chess.engine.Board.Move$CastleMove
+com.chess.engine.Board.Move$PawnEnPassantAttackMove
+com.chess.engine.Board.Move$PawnMove
