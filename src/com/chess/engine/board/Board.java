@@ -1,4 +1,10 @@
-package com.chess.engine.Board;
+package com.chess.engine.board;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import com.chess.engine.Alliance;
 import com.chess.engine.pieces.Bishop;
@@ -13,11 +19,6 @@ import com.chess.engine.player.Player;
 import com.chess.engine.player.WhitePlayer;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author NiKhil Kr

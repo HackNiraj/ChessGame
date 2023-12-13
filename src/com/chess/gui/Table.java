@@ -1,15 +1,8 @@
 package com.chess.gui;
 
-import com.chess.engine.Board.Board;
-import com.chess.engine.Board.BoardUtils;
-import com.chess.engine.Board.Move;
-import com.chess.engine.Board.Tile;
-import com.chess.engine.pieces.Piece;
-import com.chess.engine.player.AI.MiniMax;
-import com.chess.engine.player.AI.MoveStrategy;
-import com.chess.engine.player.MoveTransition;
-import com.chess.pgn.FenUtilities;
-import com.google.common.collect.Lists;
+import static javax.swing.SwingUtilities.isLeftMouseButton;
+import static javax.swing.SwingUtilities.isRightMouseButton;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -23,7 +16,6 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -34,19 +26,37 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javax.imageio.ImageIO;
-import javax.swing.*;
-import static javax.swing.SwingUtilities.isRightMouseButton;
-import static javax.swing.SwingUtilities.isLeftMouseButton;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
+
+import com.chess.engine.board.Board;
+import com.chess.engine.board.BoardUtils;
+import com.chess.engine.board.Move;
+import com.chess.engine.board.Tile;
+import com.chess.engine.pieces.Piece;
+import com.chess.engine.player.MoveTransition;
+import com.chess.engine.player.AI.MiniMax;
+import com.chess.engine.player.AI.MoveStrategy;
+import com.chess.pgn.FenUtilities;
+import com.google.common.collect.Lists;
 /**
  *
  * @author NiKhil Kr
  */
-public class Table extends Observable {
+public class Table extends java.beans.Beans {
     private final JFrame gameFrame;
     private final GameHistoryPanel gameHistoryPanel;
     private final TakenPiecesPanel takenPiecesPanel;

@@ -1,4 +1,4 @@
-package com.chess.engine.Board;
+package com.chess.engine.board;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;

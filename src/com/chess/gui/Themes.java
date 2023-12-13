@@ -4,10 +4,10 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -27,7 +27,12 @@ import javax.swing.JRadioButton;
  * @author NiKhil Kr
  */
 public class Themes extends JDialog{
-    private static AudioInputStream audioInputStream;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 5951131245461873898L;
+	
+	private static AudioInputStream audioInputStream;
     private static Clip clip;
     private int songChoice;
     
@@ -49,7 +54,7 @@ public class Themes extends JDialog{
         pieceStyleButton2 = new JRadioButton("Style 2");
         pieceStyleButton3 = new JRadioButton("Style 3");
         
-        final JComboBox musicSelect = new JComboBox();
+        final JComboBox<ComboItem> musicSelect = new JComboBox<>();
         musicSelect.addItem(new ComboItem(0, "Stop"));
         musicSelect.addItem(new ComboItem(1, "Creative Mind"));
         musicSelect.addItem(new ComboItem(2, "Drum Beat"));

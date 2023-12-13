@@ -1,6 +1,6 @@
 package com.chess.engine;
 
-import com.chess.engine.Board.Board;
+import com.chess.engine.board.Board;
 import com.chess.gui.Table;
 /*
  *

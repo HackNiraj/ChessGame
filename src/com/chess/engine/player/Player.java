@@ -1,16 +1,16 @@
 package com.chess.engine.player;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import com.chess.engine.Alliance;
-import com.chess.engine.Board.Board;
-import com.chess.engine.Board.Move;
+import com.chess.engine.board.Board;
+import com.chess.engine.board.Move;
 import com.chess.engine.pieces.King;
 import com.chess.engine.pieces.Piece;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -86,19 +86,19 @@ public abstract class Player {
     
     public MoveTransition makeMove(final Move move){
         if(!isMoveLegal(move)){
-            return new MoveTransition(this.board, move, MoveStatus.ILLEGAL_MOVE);
+            return new MoveTransition(this.board, MoveStatus.ILLEGAL_MOVE);
         }
         final Board transitionBoard = move.execute();
         final Collection<Move> kingAttacks = Player.calculateAttackOnTile(transitionBoard.currentPlayer().getOpponent().getPlayerKing().getPiecePosition(), 
                 transitionBoard.currentPlayer().getLegalMoves());
         if(!kingAttacks.isEmpty()){
-            return new MoveTransition(this.board, move, MoveStatus.LEAVES_PLAYER_IN_CHECK);
+            return new MoveTransition(this.board, MoveStatus.LEAVES_PLAYER_IN_CHECK);
         }
-        return new MoveTransition(transitionBoard, move, MoveStatus.DONE);
+        return new MoveTransition(transitionBoard, MoveStatus.DONE);
     }
     
     public MoveTransition unMakeMove(final Move move) {
-        return new MoveTransition(move.undo(), move, MoveStatus.DONE);
+        return new MoveTransition(move.undo(), MoveStatus.DONE);
     }
     
     public abstract Collection<Piece> getActivePieces();

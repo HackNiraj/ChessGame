@@ -1,18 +1,23 @@
 package com.chess.engine.pieces;
 
-import com.chess.engine.Alliance;
-import com.chess.engine.Board.Board;
-import com.chess.engine.Board.BoardUtils;
 import static com.chess.engine.Board.BoardUtils.NUM_TILES_PER_ROW;
-import com.chess.engine.Board.Move;
-import static com.chess.engine.Board.Move.*;
-import com.chess.gui.PawnPromotionPanel;
-import com.chess.gui.Table;
-import com.chess.gui.Table.PlayerType;
-import com.google.common.collect.ImmutableList;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import com.chess.engine.Alliance;
+import com.chess.engine.board.Board;
+import com.chess.engine.board.BoardUtils;
+import com.chess.engine.board.Move;
+import com.chess.engine.board.Move.PawnAttackMove;
+import com.chess.engine.board.Move.PawnEnPassantAttackMove;
+import com.chess.engine.board.Move.PawnJump;
+import com.chess.engine.board.Move.PawnMove;
+import com.chess.engine.board.Move.PawnPromotion;
+import com.chess.gui.Table;
+import com.chess.gui.Table.PlayerType;
+import com.google.common.collect.ImmutableList;
 
 /**
  *

@@ -1,6 +1,6 @@
 package com.chess.engine.player.AI;
 
-import com.chess.engine.Board.Board;
+import com.chess.engine.board.Board;
 
 /**
  *

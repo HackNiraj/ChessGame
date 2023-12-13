@@ -1,7 +1,7 @@
 package com.chess.engine.player.AI;
 
-import com.chess.engine.Board.Board;
-import com.chess.engine.Board.Move;
+import com.chess.engine.board.Board;
+import com.chess.engine.board.Move;
 import com.chess.engine.player.MoveTransition;
 
 /**
@@ -32,7 +32,7 @@ public class MiniMax implements MoveStrategy {
         int lowestSeenValue = Integer.MAX_VALUE;
         int currentValue;
         int numMoves = board.currentPlayer().getLegalMoves().size();
-        
+        System.out.println("Total moves : " + numMoves);
         System.out.println(board.currentPlayer() + " THINKING with depth = " + searchDepth);
         for(final Move move : board.currentPlayer().getLegalMoves()){
             final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
@@ -53,6 +53,7 @@ public class MiniMax implements MoveStrategy {
         }
         
         final long executionTime = System.currentTimeMillis() - startTime;
+        System.out.println("Execution time : " + executionTime);
         return bestMove;
     }
     

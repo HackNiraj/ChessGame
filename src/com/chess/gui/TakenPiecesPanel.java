@@ -1,9 +1,5 @@
 package com.chess.gui;
 
-import com.chess.engine.Board.Move;
-import com.chess.engine.pieces.Piece;
-import com.chess.gui.Table.MoveLog;
-import com.google.common.primitives.Ints;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -16,11 +12,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EtchedBorder;
+
+import com.chess.engine.board.Move;
+import com.chess.engine.pieces.Piece;
+import com.chess.gui.Table.MoveLog;
+import com.google.common.primitives.Ints;
 
 /**
  *
@@ -28,7 +30,11 @@ import javax.swing.border.EtchedBorder;
  */
 public class TakenPiecesPanel extends JPanel{
     
-    private final JPanel northPanel;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1204259813888497835L;
+	private final JPanel northPanel;
     private final JPanel southPanel;
     
     private static final Color PANEL_COLOR = Color.decode("0xFDF5E6");

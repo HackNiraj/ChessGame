@@ -1,26 +1,38 @@
 package com.chess.gui;
 
-import com.chess.engine.Alliance;
-import com.chess.engine.Board.Board;
-import com.chess.engine.player.Player;
-import com.chess.gui.Table.PlayerType;
-
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Container;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerModel;
+import javax.swing.SpinnerNumberModel;
+
+import com.chess.engine.Alliance;
+import com.chess.engine.board.Board;
+import com.chess.engine.player.Player;
+import com.chess.gui.Table.PlayerType;
+
 public class GameSetup extends JDialog {
-    private static PlayerType whitePlayerType = PlayerType.HUMAN;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 569019884729944098L;
+	private static PlayerType whitePlayerType = PlayerType.HUMAN;
     private static PlayerType blackPlayerType = PlayerType.HUMAN;
     private final JRadioButton whiteHumanButton;
     private final JRadioButton blackHumanButton;
     private final JRadioButton whiteComputerButton;
     private final JRadioButton blackComputerButton;
     private JSpinner searchDepthSpinner;
-    //Beginner
-    //Intermediate
-    //Advance
 
     private static final String HUMAN_TEXT = "Human";
     private static final String COMPUTER_TEXT = "Computer";
@@ -93,11 +105,11 @@ public class GameSetup extends JDialog {
     }
 
     public PlayerType getWhitePlayerType() {
-        return this.whitePlayerType;
+        return whitePlayerType;
     }
 
     public PlayerType getBlackPlayerType() {
-        return this.blackPlayerType;
+        return blackPlayerType;
     }
 
     private static JSpinner addLabeledSpinner(final Container c,
@@ -116,8 +128,8 @@ public class GameSetup extends JDialog {
     }
     
     public void resetGamePlayer(){
-        this.whitePlayerType = PlayerType.HUMAN;
-        this.blackPlayerType = PlayerType.HUMAN;
+        whitePlayerType = PlayerType.HUMAN;
+        blackPlayerType = PlayerType.HUMAN;
         this.whiteHumanButton.setSelected(true);
         this.blackHumanButton.setSelected(true);
     }

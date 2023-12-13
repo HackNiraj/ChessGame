@@ -1,10 +1,10 @@
 package com.chess.engine.pieces;
 
-import com.chess.engine.Alliance;
-import com.chess.engine.Board.Board;
-import com.chess.engine.Board.Move;
 import java.util.Collection;
-import java.util.List;
+
+import com.chess.engine.Alliance;
+import com.chess.engine.board.Board;
+import com.chess.engine.board.Move;
 
 /**
  * @author NiKhil Kr

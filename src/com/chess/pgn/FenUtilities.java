@@ -1,9 +1,9 @@
 package com.chess.pgn;
 
 import com.chess.engine.Alliance;
-import com.chess.engine.Board.Board;
-import com.chess.engine.Board.Board.BoardBuilder;
-import com.chess.engine.Board.BoardUtils;
+import com.chess.engine.board.Board;
+import com.chess.engine.board.Board.BoardBuilder;
+import com.chess.engine.board.BoardUtils;
 import com.chess.engine.pieces.Bishop;
 import com.chess.engine.pieces.King;
 import com.chess.engine.pieces.Knight;

@@ -1,6 +1,6 @@
 package com.chess.engine;
 
-import com.chess.engine.Board.BoardUtils;
+import com.chess.engine.board.BoardUtils;
 import com.chess.engine.player.BlackPlayer;
 import com.chess.engine.player.Player;
 import com.chess.engine.player.WhitePlayer;

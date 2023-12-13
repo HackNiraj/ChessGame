@@ -1,10 +1,9 @@
-package com.chess.engine.Board;
+package com.chess.engine.board;
 
-import com.chess.engine.Board.Board.BoardBuilder;
+import com.chess.engine.board.Board.BoardBuilder;
 import com.chess.engine.pieces.Pawn;
 import com.chess.engine.pieces.Piece;
 import com.chess.engine.pieces.Rook;
-import com.chess.gui.Table;
 
 /**
  * @author NiKhil Kr
