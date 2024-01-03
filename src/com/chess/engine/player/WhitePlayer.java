@@ -14,8 +14,8 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class WhitePlayer extends Player {
 

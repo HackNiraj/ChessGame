@@ -1,8 +1,8 @@
 package com.chess.engine.player;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public enum MoveStatus {
     DONE {

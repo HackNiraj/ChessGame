@@ -14,9 +14,8 @@ import com.chess.engine.board.Tile;
 import com.google.common.collect.ImmutableList;
 
 /**
- *
+ * 
  * @author Niraj Kr
- * @author NiKhil Kr
  */
 public class Bishop extends Piece {
 

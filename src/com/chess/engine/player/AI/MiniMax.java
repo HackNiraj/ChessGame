@@ -5,8 +5,8 @@ import com.chess.engine.board.Move;
 import com.chess.engine.player.MoveTransition;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class MiniMax implements MoveStrategy {
 

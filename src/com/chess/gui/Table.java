@@ -52,11 +52,12 @@ import com.chess.engine.player.AI.MiniMax;
 import com.chess.engine.player.AI.MoveStrategy;
 import com.chess.pgn.FenUtilities;
 import com.google.common.collect.Lists;
+
 /**
  *
- * @author NiKhil Kr
+ * @author Niraj Kr
  */
-public class Table extends java.beans.Beans {
+public class Table extends Observable {
     private final JFrame gameFrame;
     private final GameHistoryPanel gameHistoryPanel;
     private final TakenPiecesPanel takenPiecesPanel;

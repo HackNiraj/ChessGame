@@ -20,8 +20,8 @@ import com.chess.gui.Table.PlayerType;
 import com.google.common.collect.ImmutableList;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class Pawn extends Piece{
     private final static int[] CANDIDATE_MOVE_COORDINATES={8,16,7,9};

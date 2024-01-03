@@ -6,7 +6,7 @@ import com.chess.engine.pieces.Piece;
 import com.chess.engine.pieces.Rook;
 
 /**
- * @author NiKhil Kr
+ * 
  * @author Niraj Kr
  */
 public abstract class Move {

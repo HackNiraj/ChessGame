@@ -14,8 +14,8 @@ import com.chess.engine.board.Tile;
 import com.google.common.collect.ImmutableList;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class Rook extends Piece{
     private final static int[] CANDIDATE_MOVE_VECTOR_COORDINATES={-1,-8,1,8};

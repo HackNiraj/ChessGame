@@ -5,8 +5,8 @@ import com.chess.engine.pieces.Piece;
 import com.chess.engine.player.Player;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public final class StandardBoardEvaluator implements BoardEvaluator {
 

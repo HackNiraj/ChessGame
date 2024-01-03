@@ -14,7 +14,7 @@ import com.chess.engine.board.Tile;
 import com.google.common.collect.ImmutableList;
 
 /**
- * @author NiKhil Kr
+ * 
  * @author Niraj Kr
  */
 public class Queen extends Piece {

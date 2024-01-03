@@ -6,8 +6,8 @@ import com.chess.engine.player.Player;
 import com.chess.engine.player.WhitePlayer;
 
 /**
+ * 
  * @author Niraj Kr
- * @author NiKhil Kr
  */
 public enum Alliance {
     WHITE {

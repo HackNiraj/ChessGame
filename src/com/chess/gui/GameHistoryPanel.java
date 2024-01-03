@@ -17,8 +17,8 @@ import com.chess.engine.board.Move;
 import com.chess.gui.Table.MoveLog;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class GameHistoryPanel extends JPanel {
 

@@ -21,6 +21,11 @@ import com.chess.engine.board.Board;
 import com.chess.engine.player.Player;
 import com.chess.gui.Table.PlayerType;
 
+
+/**
+ * 
+ * @author Niraj Kr
+ */
 public class GameSetup extends JDialog {
     /**
 	 * 

@@ -7,7 +7,7 @@ import com.chess.engine.board.Board;
 import com.chess.engine.board.Move;
 
 /**
- * @author NiKhil Kr
+ * 
  * @author Niraj Kr
  */
 public abstract class Piece {

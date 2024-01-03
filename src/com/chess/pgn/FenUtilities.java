@@ -12,8 +12,8 @@ import com.chess.engine.pieces.Queen;
 import com.chess.engine.pieces.Rook;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class FenUtilities {
 

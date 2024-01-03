@@ -25,8 +25,8 @@ import com.chess.gui.Table.MoveLog;
 import com.google.common.primitives.Ints;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class TakenPiecesPanel extends JPanel{
     

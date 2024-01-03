@@ -23,8 +23,8 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class Themes extends JDialog{
     /**

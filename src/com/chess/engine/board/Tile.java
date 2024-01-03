@@ -5,9 +5,9 @@ import com.google.common.collect.ImmutableMap;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
+/**
+ * 
  * @author Niraj Kr
- * @author NiKhil Kr
  */
 public abstract class Tile {
     protected final int tileCoordinate;

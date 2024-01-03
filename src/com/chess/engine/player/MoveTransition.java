@@ -3,8 +3,8 @@ package com.chess.engine.player;
 import com.chess.engine.board.Board;
 
 /**
- *
- * @author NiKhil Kr
+ * 
+ * @author Niraj Kr
  */
 public class MoveTransition {
     private final Board transitionBoard;
